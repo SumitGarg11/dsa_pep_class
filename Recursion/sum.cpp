@@ -7,8 +7,10 @@ int sumFun(int n)
     {
         return 0;
     }
-    sum = n + sumFun(n - 1);
-    return sum;
+    int remSum = sumFun(n - 1);
+    int tSum = n + remSum;
+
+    return tSum;
 }
 int main()
 {
